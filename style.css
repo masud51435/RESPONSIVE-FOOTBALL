@@ -1,0 +1,252 @@
+/*--------------------
+ fonts  
+ ---------------------*/
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+ /*-----------------------
+  common style  
+  ------------------------*/
+  body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  /*------------------------
+   banner-container 
+   -------------------------*/
+   #banner-container{
+    width: 100%;
+    background-color: #2D25A0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px; 
+     
+   }
+   .banner{
+    display: flex;
+    padding-top: 135px;
+    
+   }
+   .banner-info h1{
+     width: 485px;
+     margin-right: 102px;
+     margin-bottom: 27px ;
+     font-size: 64px;
+     font-weight: bold;
+     color: #FFFFFF;
+     
+   }
+   .link-button{
+     width: 168px;
+     height: 44px;
+     background-color: #E02C6D;
+     padding: 10px 24px;
+     text-decoration: none;
+     color: #FFFFFF;
+     font-size: 16px;
+     font-weight: 500;  
+   }
+   .link-button:hover{
+     background-image:linear-gradient( orangered, salmon);
+   }
+   
+   .banner-img img{
+     width: 556px;
+     height: 438px;
+     padding-bottom: 86px;
+     transition: transform 2s;
+   }
+   .banner-img:hover img{
+    transform:scale(1.20);
+  }
+   .fa-arrow-right{
+    margin-left: 8px;
+  }
+   /*---------------------------------
+    container 
+    ----------------------------------*/
+    .container{
+      margin-left: 180px;
+      margin-right: 210px;
+    }
+    .top-players{
+      width: 330px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 30px;
+      grid-row-gap: 27px;
+    }
+    .player{
+      width: 330px;
+      height: 474px;
+      box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+      padding: 15px;
+    }
+    .player img{
+      width: 100%;
+      height: 256px;
+    }
+    .player-title{
+      font-size: 28px;
+      font-weight: 700;
+      margin-top: 16px;
+    }
+    .player-info{
+      color: #6C6C6C;
+      font-size: 16px;
+    }
+    /*---------------------------------
+     partner-container 
+     --------------------------------*/
+      #partner-container{
+       background-image: url(images/gradient_2.jpg);
+       background-position: center;
+       background-size: cover;
+       width: 100%;
+       height: 355px;
+       margin-top: 70px;
+       margin-bottom: 70px;
+     }
+     .official-partner{
+       text-align: center;
+     }
+     .partner-title{
+       font-size: 27px;
+       font-weight: 600 ;
+       color: #FFFFFF;
+     }
+     .partners:hover img{
+       border-bottom: 5px solid rgb(255, 85, 23);
+     }
+     .logo-size-white{
+      width: 170px;
+      margin-right: 180px;
+    }
+     .logo-size-rakuten{
+       width: 230px;
+       margin-right: 180px;
+     }
+     .logo-size-lg{
+       width: 180px;
+     }
+     /*--------------------------------
+      container  
+      --------------------------------*/
+      .player-history img{
+        width: 350px;
+      }
+      .player-history{
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        border-top: 5px solid;
+        border-image: linear-gradient(orange, salmon);
+        border-image-slice: 1;
+        border-radius: 10px;
+      }
+    /*---------------------------------
+     footer 
+     ---------------------------------*/
+     #last-container{
+       text-align: center;
+       margin-top: 158px;
+       margin-bottom: 63px;
+     }
+     .logo img{
+      width: 483px;
+      height: 110px;
+    }
+     .fab.contract, .fas.contract{
+      background: #c0c0c08f;
+      color: #969BAB;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 32px;
+      vertical-align: middle;
+      padding: 0px;
+      margin-left: 14px;
+     }
+     /*-------------------------------------------
+      media query 
+      ------------------------------------------*/
+      /* mobile only  */
+      @media only screen and (max-width: 688px){
+        /*   banner-container  */
+        #banner-container{
+          width: 688px;
+        }
+        .banner{
+          padding-left: 16px;
+          display: grid;
+          grid-template-columns:repeat(1, 1fr);
+          grid-row-gap: 50px;
+        }
+        /*---------------- 
+        container  
+        ----------------*/
+        .top-players{
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .player{
+          width: 330px;
+        }
+        /*-------------------------
+         partner-container 
+         -------------------------*/
+        #partner-container{
+          width: 688px;
+        }
+        .partner-title{
+          font-size: 20px;
+          font-weight: 600 ;
+          color: #FFFFFF;
+        }
+        .logo-size-white{
+          width: 120px;
+          margin-right: 20px
+        }
+         .logo-size-rakuten{
+           width: 160px;
+           margin-right: 20px;
+         }
+         .logo-size-lg{
+           width: 120px;
+         }
+        /*-----------------------------
+         footer  
+         ----------------------------*/
+        footer {
+          width: 600px;
+          margin-bottom: 187px;
+        } 
+      }
+        /*------------------------------
+         tab display / ipad
+         -----------------------------*/
+         @media only screen and (min-width:689px) and (max-width:992px){
+            /* banner container  */
+           #banner-container{
+            width: 1440px;
+           }
+          /*----------------------
+          container  
+          -----------------------*/
+          .container{
+            margin-left: 150px;
+            }
+          /*---------------------------
+           partner container  
+           ---------------------------*/
+           #partner-container{
+             width: 1440px;
+           }
+           /*---------------------------
+            footer  
+            -----------------------------*/
+            footer{
+              width: 1440px;
+              margin-bottom: 187px;
+            }
+         }
